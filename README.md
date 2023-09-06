@@ -1,6 +1,6 @@
 # Moodle Kinescope
 
-Media plugin for Kinescope service - a plugin that makes it easy to add videos from the Kinescope service.
+Media plugin for Kinescope service - a plugin that makes it easy to add videos from the Kinescope service by inserting a link to Kinescope video in any text editor.
 
 
 ## Instatllation
@@ -12,7 +12,8 @@ Media plugin for Kinescope service - a plugin that makes it easy to add videos f
 ## Configuration
 After installing the plugin, you can enable it: `Site Administration->Plugins->Media player management`
 - Enable kinescope plugin
-- Up kinescope plugin
+
+That's all :)
 
 
 ## Additional Settings
