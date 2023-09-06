@@ -34,8 +34,7 @@ defined('MOODLE_INTERNAL') || die();
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class media_kinescope_plugin extends core_media_player_external {
-    protected function embed_external(moodle_url $url, $name, $width, $height, $options)
-    {
+    protected function embed_external(moodle_url $url, $name, $width, $height, $options) {
         $videoid = $this->get_video_id();
         $info = s($name);
 
@@ -59,8 +58,7 @@ OET;
      * Default rank
      * @return int
      */
-    public function get_rank()
-    {
+    public function get_rank() {
         return 1100;
     }
 
@@ -83,16 +81,14 @@ OET;
         return null;
     }
 
-    protected function get_regex()
-    {
+    protected function get_regex() {
         $start = '~^https?://kinescope.io/';
         // Middle bit: either 123456789 or 123456789/abdef12345.
         $middle = '(([0-9]+)/([0-9a-f]+)|[0-9]+)';
         return $start . $middle .core_media_player_external::END_LINK_REGEX_PART;
     }
 
-    public function get_embeddable_markers()
-    {
+    public function get_embeddable_markers() {
         return ['kinescope.io/'];
     }
 }

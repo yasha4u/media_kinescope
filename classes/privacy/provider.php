@@ -29,6 +29,8 @@ namespace media_kinescope\privacy;
 defined('MOODLE_INTERNAL') || die();
 
 /**
+ * Privacy provider implementation for media_kinescope.
+ *
  * @copyright 2023 LMS-Service {@link https://lms-service.ru/}
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -40,8 +42,7 @@ class provider implements \core_privacy\local\metadata\null_provider {
      *
      * @return  string
      */
-    public static function get_reason(): string
-    {
+    public static function get_reason(): string {
         return 'privacy:metadata';
     }
 }
