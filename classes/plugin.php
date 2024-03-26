@@ -83,8 +83,8 @@ OET;
 
     protected function get_regex() {
         $start = '~^https?://kinescope.io/';
-        // Middle bit: either 123456789 or 123456789/abdef12345.
-        $middle = '(([0-9]+)/([0-9a-f]+)|[0-9]+)';
+        // Middle bit: either abqaz12345 or abqaz12345/abqaz12345.
+        $middle = '(([0-9a-z]+)/([0-9a-z]+)|[0-9a-z]+)';
         return $start . $middle .core_media_player_external::END_LINK_REGEX_PART;
     }
 
